@@ -98,12 +98,10 @@ export default {
     saveLocation: function(){
       if(this.isSaved){
         this.addLocation(this.savePayload).then(response => {
-          console.log(response);
         });
       }
       else{
         this.removeLocation(this.removePayload).then(response => {
-          console.log(response);
         });
       }
       
