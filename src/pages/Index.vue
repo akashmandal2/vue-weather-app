@@ -7,7 +7,7 @@
       >
       </parallax>
       <div class="container">
-        <div class="content-center brand top-46p">
+        <div class="content-center brand top-48p">
           <!-- <img class="n-logo" src="img/now-logo.png" alt="" /> -->
           <h1 class="h1-seo">Weather App</h1>
           <h3>A beautiful Bootstrap 4 UI Vue JS Weather app integrated with OpenWeather.</h3>
@@ -53,5 +53,5 @@ export default {
 </script>
 <style>
 .less-height{height:320px !important}
-.top-46p{top:44%!important}
+.top-48p{top:48%!important}
 </style>

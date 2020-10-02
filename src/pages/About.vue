@@ -10,7 +10,7 @@
         <h3 class="title tt-caps">About the Website</h3>
         <ul>
           <li>
-            The website features a Signup / Login Option. The Forms haev basic validations.This allows users to save Locations with help of toggle button(shown only when logged in).
+            The website features a Signup / Login Option. The Forms have basic validations.This allows users to save Locations with help of toggle button(shown only when logged in).
           </li>
           <li>
            On toggling OFF, it deletes the location. User can also delete from Locations page.
@@ -24,6 +24,15 @@
           <li>
             App uses Geolocation API to fetch current location, OpenWeather API to fetch the location's weather, Vuex for session management.
           </li>
+          <li>
+            The app uses Responsive design which makes is compatible in mobile devices as well.
+          </li>
+          <li>
+            App is built using Visual Studio Code for mainly 2 reasons - It is User friendly & I have been using it for 2 years now developing simple HTML/CSS as well as Angular/Vue websites. It has easy options for integrating with plugins needed by me.
+          </li>
+          <li>
+            App source code is hosted in Github - https://github.com/akashmandal2/vue-weather-app
+          </li>
         </ul>
       </div>
     </div>
@@ -35,5 +44,8 @@ export default {
 }
 </script>
 <style scoped>
-
+ul{
+  padding: 0!important;
+  font-size: 18px!important;
+}
 </style>

@@ -15,7 +15,7 @@
     </el-tooltip>
     <div class="content">
       <div class="social-description">
-        <h2>{{calculateTime(wReport.report.current.dt, wReport.report.timezone_offset)}}</h2>
+        <h2 class="size-fit">{{calculateTime(wReport.report.current.dt, wReport.report.timezone_offset)}}</h2>
         <p>{{calculateDate(wReport.report.current.dt, wReport.report.timezone_offset)}}</p>
       </div>
       <div class="social-description">
@@ -152,5 +152,8 @@ export default {
 }
 .bootstrap-switch .bootstrap-switch-label{
       margin: 0px -8px !important;
+}
+.size-fit{
+  font-size: 2.3em!important;
 }
 </style>

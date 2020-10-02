@@ -12,7 +12,7 @@
         <div class="content">
           <div class="social-description">
             <h2>{{user.locations.length}}</h2>
-            <p>Saved Locations</p>
+            <p id="weather-report">Saved Locations</p>
           </div>
         </div>
         <current-weather-section v-show="showWeather" :wReport="currentWeather" :showSaveOption="false"></current-weather-section>
@@ -81,6 +81,7 @@ export default {
         for(let j=this.savedLocations.length-1; j>=0;j--){
               if(this.savedLocations[j].name === n && this.savedLocations[j].country === c)
               this.savedLocations.splice(j,1);
+              this.currentWeather = null;
           }
       })
     },
@@ -89,7 +90,8 @@ export default {
       .then((response) => {
         let finalObj = JSON.parse('{"name":"'+loc.name+'","country":"'+loc.country+'","report":null}');
         finalObj.report = response.data
-        this.currentWeather = finalObj;        
+        this.currentWeather = finalObj;
+        document.getElementById('weather-report').scrollIntoView({behavior: "smooth"});      
       })
     }
   },

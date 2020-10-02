@@ -18,7 +18,6 @@
               @click.prevent="getLocation"
             >
               <i class="fa fa-location-arrow color-cfb"></i>
-              <p class="d-lg-none d-xl-none">Reload</p>
             </a>
           </el-tooltip>
         </div>
@@ -32,7 +31,6 @@
               @click.prevent="getLocation"
             >
               <i class="fa fa-map-marker color-cfb"></i>
-              <p class="d-lg-none d-xl-none">GPS</p>
             </a>
           </el-tooltip>
         </div>

@@ -23,6 +23,7 @@ export default new Vuex.Store({
           }
           db.users[i].locations.push(payload.location);
           state.commit('setCurrentUser', db.users[i]);
+          localStorage.setItem('currentUser', JSON.stringify(db.users[i]));
           localStorage.setItem('weather-app-db', JSON.stringify(db));
           return "SAVED";
         }
